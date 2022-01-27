@@ -14,8 +14,9 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: 0 1.5rem 2rem rgba($color-black, .15);
+    overflow: hidden;
 
     &--front {
       background-color: $color-white;
@@ -38,5 +39,27 @@
   }
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  //FRONT SIDE STYLING
+  &__picture{
+      background-size: cover;
+      height: 23rem;
+      background-blend-mode: color;
+      --webkit-clip-path: polygon(0 0 , 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0 , 100% 0, 100% 85%, 0 100%);
+      &--1{
+          background-image:linear-gradient(
+            to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark
+          ), url(../img/nat-5.jpg);
+      }
+      &--2{
+        background-image: url(../img/nat-5.jpg);
+      }
+       &--3{
+          background-image: url(../img/nat-5.jpg);
+      }
   }
 }
