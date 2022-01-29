@@ -91,7 +91,7 @@ body {
     animation: moveInRight 1s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary-sub {
-        letter-spacing: .5rem;
+        letter-spacing: 0.5rem;
         font-size: 1.7rem; } }
 
 .heading-secondary {
@@ -102,11 +102,11 @@ body {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s; }
+  letter-spacing: 0.2rem;
+  transition: all 0.2s; }
   @media (max-width: 56.25em) {
     .heading-secondary {
-      font-size: 3rem; } }
+      font-size: 2.5rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
@@ -140,7 +140,10 @@ body {
   margin-bottom: 4rem !important; }
   @media (max-width: 56.25em) {
     .u-margin-bottom-medium {
-      padding: 3rem !important; } }
+      padding: 0 !important; } }
+  @media (max-width: 75em) {
+    .u-margin-bottom-medium {
+      padding: 0 !important; } }
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
@@ -180,7 +183,7 @@ body {
     animation: moveInRight 1s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary-sub {
-        letter-spacing: .5rem;
+        letter-spacing: 0.5rem;
         font-size: 1.7rem; } }
 
 .heading-secondary {
@@ -191,11 +194,11 @@ body {
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s; }
+  letter-spacing: 0.2rem;
+  transition: all 0.2s; }
   @media (max-width: 56.25em) {
     .heading-secondary {
-      font-size: 3rem; } }
+      font-size: 2.5rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
@@ -262,13 +265,20 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url(../img/nat-10.jpg); } }
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
     @media (max-width: 75em) {
       .book__form {
-        width: 70%; } }
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
 
 .header {
   height: 95vh;
@@ -534,9 +544,7 @@ body {
     font-size: 6rem;
     margin-bottom: 0.5rem;
     display: inline-block;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
-    --webkit-background-clip: text;
-    color: transparent; }
+    --webkit-background-clip: text; }
     @media (max-width: 56.25em) {
       .feature-box__icon {
         margin-bottom: 0; } }
@@ -826,6 +834,9 @@ body {
   width: 90%;
   display: block;
   transition: all 0.3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input::-webkit-input-placeholder {
     color: #999; }
   .form__input:focus {
@@ -851,6 +862,10 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
